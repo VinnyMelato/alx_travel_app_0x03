@@ -33,6 +33,8 @@ ALLOWED_HOSTS = ['*']  # Restrict in production, e.g., ['localhost', '127.0.0.1'
 
 # Application definition
 INSTALLED_APPS = [
+    'django_celery_results',
+    'django_celery_beat',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
