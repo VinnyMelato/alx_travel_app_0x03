@@ -199,3 +199,10 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = TIME_ZONE
+
+# Email configuration (development-friendly defaults)
+# In production override with real SMTP credentials via environment
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'no-reply@alxtravel.example'
+# Optional test recipient used when customer email is not provided
+BOOKING_TEST_EMAIL = 'test-recipient@example.com'
